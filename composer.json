@@ -1,0 +1,15 @@
+{
+    "name": "user/framework",
+    "authors": [
+        {
+            "name": "Olim4ik",
+            "email": "youngproger47@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "app\\": "./"
+        }
+    },
+    "require": {}
+}
