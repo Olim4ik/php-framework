@@ -9,8 +9,6 @@ $app = new Application(dirname(__DIR__));
 
 $app->router->get('/', 'home');
 $app->router->get('/contact', 'contact');
-$app->router->post('/contact', function (){
-	return 'handling submitted data';
-});
+$app->router->post('/contact', [\app\controllers\SiteController::class, 'contact']);
 
 $app->run();
